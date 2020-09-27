@@ -252,6 +252,22 @@ $(function () {
 
         },
 
+        setFontAndada: function () {
+            this.setFont("andada");
+        },
+
+        setFontLato: function () {
+            this.setFont("lato");
+        },
+
+        setFontPtSerif: function () {
+            this.setFont("pt-serif");
+        },
+
+        setFontPtSans: function () {
+            this.setFont("pt-sans");
+        },
+
         base64encode: function (str) {
             return btoa(unescape(encodeURIComponent(str)));
         },

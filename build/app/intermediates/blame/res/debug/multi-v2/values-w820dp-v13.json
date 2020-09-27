@@ -4,7 +4,7 @@
             "outputFile": "/Users/pratham.xp/veloreader/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/res/values-w820dp-v13/values-w820dp-v13.xml",
+                    "source": "/Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/res/values-w820dp-v13/values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

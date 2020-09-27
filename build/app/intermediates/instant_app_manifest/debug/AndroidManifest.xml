@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="yuritdev.veloreader"
+    package="com.example.veloreader"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0.0" >
@@ -15,15 +15,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <!--
- io.flutter.app.FlutterApplication is an android.app.Application that
-         calls FlutterMain.startInitialization(this); in its onCreate method.
-         In most cases you can leave this as-is, but you if you want to provide
-         additional functionality it is fine to subclass or reimplement
-         FlutterApplication and put your custom class here.
-    -->
+
     <application
-        android:name="io.flutter.app.FlutterApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -32,7 +25,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true" >
         <activity
-            android:name="yuritdev.veloreader.MainActivity"
+            android:name="com.example.veloreader.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
@@ -75,7 +68,7 @@
 
         <provider
             android:name="com.folioreader.AppContext"
-            android:authorities="yuritdev.veloreader.provider.appcontext"
+            android:authorities="com.example.veloreader.provider.appcontext"
             android:exported="false" />
 
         <activity
@@ -99,11 +92,11 @@
 
         <provider
             android:name="org.readium.r2.streamer.ClientAppContext"
-            android:authorities="yuritdev.veloreader.provider.clientappcontext"
+            android:authorities="com.example.veloreader.provider.clientappcontext"
             android:exported="false" />
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="yuritdev.veloreader.lifecycle-process"
+            android:authorities="com.example.veloreader.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
     </application>

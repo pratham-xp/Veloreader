@@ -1,16 +1,22 @@
+import 'package:epub_kitty/epub_kitty.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:veloreader/Providers/books.dart';
 
-import 'package:epub_viewer/epub_viewer.dart';
+//import 'package:epub_viewer/epub_viewer.dart';
 //import 'package:epub_view/epub_view.dart';
 import '../constants.dart';
 import 'book_item.dart';
 import 'category_list.dart';
 import 'search_bar.dart';
 
-class LoadAsset extends StatelessWidget {
+class LoadAsset extends StatefulWidget {
+  @override
+  _LoadAssetState createState() => _LoadAssetState();
+}
+
+class _LoadAssetState extends State<LoadAsset> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -51,18 +57,10 @@ class LoadAsset extends StatelessWidget {
                               book: bookData.items[i],
                             ),
                             onTap: () {
-                              EpubViewer.setConfig(
-                                themeColor: Theme.of(context).primaryColor,
-                                identifier: "iosBook",
-                                scrollDirection: EpubScrollDirection.VERTICAL,
-                                allowSharing: true,
-                                enableTts: true,
-                              );
-
-                              EpubViewer.open(
+                              EpubKitty.setConfig(
+                                  "book", "#32a852", "vertical", true);
+                              EpubKitty.open(
                                 bookData.items[i].path,
-                                lastLocation:
-                                    null, // first page will open up if the value is null
                               );
                             }),
                       ),
