@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="numberOfSearchResults">
+        <item quantity="one">%d výskyt</item>
+        <item quantity="other">%d výskytů</item>
+    </plurals>
+    <string name="Cancel">Zrušit</string>
+    <string name="LanguageChooserTitle">Vyberte dva jazyky:</string>
+    <string name="OK">OK</string>
+    <string name="SetSizeTitle">Velikost horního panelu:</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Přejít na plochu"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Přejít nahoru"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Více možností"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Hotovo"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Zobrazit vše"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Vybrat aplikaci"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"VYP"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ZAP"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Fn+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"mezerník"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Vyhledat…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Smazat dotaz"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Dotaz pro vyhledávání"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Hledat"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Odeslat dotaz"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Hlasové vyhledávání"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Sdílet s"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Sdílet s aplikací <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Sbalit"</string>
+    <string name="authorsMeta">&lt;tr>&lt;td>Autoři:&lt;/td></string>
+    <string name="cannot_access_epub_message">Nelze otevřít elektronickou knihu, je třeba povolit práva na zápis do externí paměti!</string>
+    <string name="changeStyle">Změna stylu</string>
+    <string name="change_Font">Změnit písmo</string>
+    <string name="change_Font_Color">Barva písma:</string>
+    <string name="contents">Obsah</string>
+    <string name="contributorsMeta">&lt;tr>&lt;td>Přispěvatelé:&lt;/td></string>
+    <string name="copied">Zkopírované</string>
+    <string name="copy">Kopírovat</string>
+    <string name="define">Definice</string>
+    <string name="descriptionsMeta">&lt;tr>&lt;td>Popisy:&lt;/td></string>
+    <string name="dictionary">Slovník</string>
+    <string name="direction_horizontal">Horizontální</string>
+    <string name="direction_vertical">Vertikální</string>
+    <string name="edit_notes">Uložte si poznámku</string>
+    <string name="error_CannotChangeStyle">Není možné změnit styl!</string>
+    <string name="half_speed">1/2x</string>
+    <string name="highlight">Zvýraznit</string>
+    <string name="highlights">Zvýrazněné</string>
+    <string name="languageMeta">&lt;tr>&lt;td>Jazyky:&lt;/td>&lt;td></string>
+    <string name="less_than_minute">Méně než minuta · </string>
+    <string name="loading">Probíhá načítání</string>
+    <string name="menu_item_config">Nastavení</string>
+    <string name="menu_item_copy">Kopírovat</string>
+    <string name="menu_item_define">Definice</string>
+    <string name="menu_item_highlight">Zvýraznit</string>
+    <string name="menu_item_search">Vyhledávání</string>
+    <string name="menu_item_share">Sdílet</string>
+    <string name="menu_item_tts">Převod textu na řeč</string>
+    <string name="minute_left">%1$d minuta · </string>
+    <string name="minutes_left">%1$d minut · </string>
+    <string name="one_and_half">1 1/2x</string>
+    <string name="onex">1x</string>
+    <string name="page_left">%1$d strana zůstává</string>
+    <string name="pages_left">%1$d stran zůstává</string>
+    <string name="please_enter_note">zadejte poznámku</string>
+    <string name="please_wait">prosím čekejte...</string>
+    <string name="please_wait_till_audio_is_parsed">čekejte prosím na analyzování zvuku, o chvíli zkuste znovu</string>
+    <string name="publishersMeta">&lt;tr>&lt;td>Vydavatelé:&lt;/td></string>
+    <string name="rightsMeta">&lt;tr>&lt;td>Práva:&lt;/td></string>
+    <string name="save_note">Uložit poznámku</string>
+    <string name="search_empty_text">Žádné výsledky.</string>
+    <string name="search_failure_text">Něco se pokazilo.</string>
+    <string name="search_hint">Vyhledávání v knize</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Hledat"</string>
+    <string name="send_to">Odeslat</string>
+    <string name="share">Sdílet</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="style">Styl</string>
+    <string name="style_underline"><![CDATA[<u style=\" border-bottom: 1px dashed #bcbcbc;   text-decoration: none;\">Styl</u>]]></string>
+    <string name="titlesMeta">&lt;tr>&lt;td>Názvy:&lt;/td></string>
+    <string name="tocReference">&lt;tr>&lt;td>Obsah:&lt;/td></string>
+    <string name="two_x">2x</string>
+    <string name="typesMeta">&lt;tr>&lt;td>Druhy:&lt;/td></string>
+    <string name="wikipedia">Wikipedie</string>
+</resources>
