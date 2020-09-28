@@ -1,11 +1,8 @@
 import 'package:epub_kitty/epub_kitty.dart';
 import 'package:flutter/material.dart';
-//import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:veloreader/Providers/books.dart';
 
-//import 'package:epub_viewer/epub_viewer.dart';
-//import 'package:epub_view/epub_view.dart';
+import '../Providers/books.dart';
 import '../constants.dart';
 import 'book_item.dart';
 import 'category_list.dart';

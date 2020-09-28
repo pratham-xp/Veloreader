@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 //import 'package:image/image.dart';
 import '../constants.dart';
 
-// We need statefull widget because we are gonna change some state on our category
 class CategoryList extends StatefulWidget {
   @override
   _CategoryListState createState() => _CategoryListState();
 }
 
 class _CategoryListState extends State<CategoryList> {
-  // by default first item will be selected
   int selectedIndex = 0;
   List categories = [
     'All',

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../Providers/book.dart';
 
+import '../Providers/book.dart';
 import '../constants.dart';
 
 class BookItem extends StatelessWidget {
