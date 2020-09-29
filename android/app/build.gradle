@@ -61,7 +61,7 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation "com.folioreader:folioreader:0.5.4"//this is just the updated version as of now
+    implementation "com.jideguru:folioreader:0.6.1"//this is just the updated version as of now
     implementation 'com.android.support:multidex:1.0.3' // ( for androidx)
     configurations.matching { it.name == '_internal_aapt2_binary' }.all {
         config -> config.resolutionStrategy.eachDependency {

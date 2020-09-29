@@ -24,8 +24,8 @@ dependencies:
   flutter:
     sdk: flutter
   epub: ^2.1.0
-  #epub_viewer: ^0.1.7
-  epub_kitty: ^0.1.7
+  epub_viewer: ^0.1.7
+  #epub_kitty: ^0.1.7
   provider: ^4.3.2+1
   google_fonts: ^1.1.0
   archive: ^2.0.13

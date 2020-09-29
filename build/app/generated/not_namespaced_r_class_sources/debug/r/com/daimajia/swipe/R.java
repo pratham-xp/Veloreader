@@ -13,27 +13,27 @@ public final class R {
         private attr() {}
 
         public static final int bottomEdgeSwipeOffset = 0x7f030042;
-        public static final int clickToClose = 0x7f03007b;
-        public static final int drag_edge = 0x7f0300b9;
-        public static final int leftEdgeSwipeOffset = 0x7f030156;
-        public static final int rightEdgeSwipeOffset = 0x7f030191;
-        public static final int show_mode = 0x7f0301a3;
-        public static final int topEdgeSwipeOffset = 0x7f030214;
+        public static final int clickToClose = 0x7f03007c;
+        public static final int drag_edge = 0x7f0300ba;
+        public static final int leftEdgeSwipeOffset = 0x7f03015f;
+        public static final int rightEdgeSwipeOffset = 0x7f03019f;
+        public static final int show_mode = 0x7f0301b1;
+        public static final int topEdgeSwipeOffset = 0x7f030223;
     }
     public static final class id {
         private id() {}
 
         public static final int bottom = 0x7f080048;
-        public static final int lay_down = 0x7f0800ab;
-        public static final int left = 0x7f0800b0;
-        public static final int pull_out = 0x7f0800dd;
-        public static final int right = 0x7f0800e1;
-        public static final int top = 0x7f080134;
+        public static final int lay_down = 0x7f0800ac;
+        public static final int left = 0x7f0800b1;
+        public static final int pull_out = 0x7f0800e0;
+        public static final int right = 0x7f0800e4;
+        public static final int top = 0x7f080137;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] SwipeLayout = { 0x7f030042, 0x7f03007b, 0x7f0300b9, 0x7f030156, 0x7f030191, 0x7f0301a3, 0x7f030214 };
+        public static final int[] SwipeLayout = { 0x7f030042, 0x7f03007c, 0x7f0300ba, 0x7f03015f, 0x7f03019f, 0x7f0301b1, 0x7f030223 };
         public static final int SwipeLayout_bottomEdgeSwipeOffset = 0;
         public static final int SwipeLayout_clickToClose = 1;
         public static final int SwipeLayout_drag_edge = 2;

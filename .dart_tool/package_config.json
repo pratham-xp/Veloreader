@@ -80,8 +80,8 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "epub_kitty",
-      "rootUri": "file:///Users/pratham.xp/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/epub_kitty-0.1.7",
+      "name": "epub_viewer",
+      "rootUri": "file:///Users/pratham.xp/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/epub_viewer-0.1.7",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     },
@@ -338,7 +338,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-09-28T18:46:02.856676Z",
+  "generated": "2020-09-29T18:16:38.191121Z",
   "generator": "pub",
   "generatorVersion": "2.10.0-136.0.dev"
 }

@@ -92,10 +92,10 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-  epub_kitty:
+  epub_viewer:
     dependency: "direct main"
     description:
-      name: epub_kitty
+      name: epub_viewer
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.7"

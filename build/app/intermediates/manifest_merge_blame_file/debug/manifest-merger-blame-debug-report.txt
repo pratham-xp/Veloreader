@@ -24,7 +24,7 @@
 18    <application
 18-->/Users/pratham.xp/veloreader/android/app/src/main/AndroidManifest.xml:5:4-42:19
 19        android:allowBackup="true"
-19-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:17:9-35
+19-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:17:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 20-->[androidx.core:core:1.1.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
@@ -33,7 +33,7 @@
 23        android:label="veloreader"
 23-->/Users/pratham.xp/veloreader/android/app/src/main/AndroidManifest.xml:6:9-35
 24        android:networkSecurityConfig="@xml/network_security_config"
-24-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:18:9-69
+24-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:18:9-69
 25        android:supportsRtl="true" >
 25-->[com.github.codetoart:r2-shared-kotlin:1.0.4-2] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/ccd8e7bc8c97d9b2fb1d1710810bc635/r2-shared-kotlin-1.0.4-2/AndroidManifest.xml:20:9-35
 26        <activity
@@ -100,47 +100,47 @@
 66-->/Users/pratham.xp/veloreader/android/app/src/main/AndroidManifest.xml:41:13-30
 67
 68        <provider
-68-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:20:9-23:40
+68-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:20:9-23:40
 69            android:name="com.folioreader.AppContext"
-69-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:21:13-54
+69-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:21:13-54
 70            android:authorities="com.example.veloreader.provider.appcontext"
-70-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:22:13-71
+70-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:22:13-71
 71            android:exported="false" />
-71-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:23:13-37
+71-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:23:13-37
 72
 73        <activity
-73-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:25:9-28:60
+73-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:25:9-28:60
 74            android:name="com.folioreader.ui.activity.FolioActivity"
-74-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:26:13-69
+74-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:26:13-69
 75            android:label="@string/app_name"
-75-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:27:13-45
+75-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:27:13-45
 76            android:theme="@style/FolioActivityDayTheme" />
-76-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:28:13-57
+76-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:28:13-57
 77        <activity
-77-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:29:9-31:59
+77-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:29:9-31:59
 78            android:name="com.folioreader.ui.activity.ContentHighlightActivity"
-78-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:30:13-80
+78-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:30:13-80
 79            android:theme="@style/AppTheme.NoActionBar" />
-79-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:31:13-56
+79-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:31:13-56
 80        <activity
-80-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:32:9-42:20
+80-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:32:9-42:20
 81            android:name="com.folioreader.ui.activity.SearchActivity"
-81-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:33:13-70
+81-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:33:13-70
 82            android:launchMode="singleTop" >
-82-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:34:13-43
+82-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:34:13-43
 83            <intent-filter>
-83-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:35:13-37:29
+83-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:35:13-37:29
 84                <action android:name="android.intent.action.SEARCH" />
-84-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:36:17-71
-84-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:36:25-68
+84-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:36:17-71
+84-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:36:25-68
 85            </intent-filter>
 86
 87            <meta-data
-87-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:39:13-41:54
+87-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:39:13-41:54
 88                android:name="android.app.searchable"
-88-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:40:17-54
+88-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:40:17-54
 89                android:resource="@xml/searchable" />
-89-->[com.folioreader:folioreader:0.5.4] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/bf64364ef82cd999d66db3bd84848d01/folioreader-0.5.4/AndroidManifest.xml:41:17-51
+89-->[com.jideguru:folioreader:0.6.1] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0b4def5988560c71991632b7c7ab23c1/folioreader-0.6.1/AndroidManifest.xml:41:17-51
 90        </activity>
 91
 92        <provider
@@ -152,15 +152,15 @@
 95            android:exported="false" />
 95-->[com.github.codetoart:r2-streamer-kotlin:1.0.4-2] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/8e5997c4531adf7733f392a53c46e8fd/jetified-r2-streamer-kotlin-1.0.4-2/AndroidManifest.xml:25:13-37
 96        <provider
-96-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0aa65592d3c523dfe9c3cca2e0707b5d/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+96-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/85dccd77aff39d07f63c42d603c4f408/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
 97            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-97-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0aa65592d3c523dfe9c3cca2e0707b5d/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+97-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/85dccd77aff39d07f63c42d603c4f408/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
 98            android:authorities="com.example.veloreader.lifecycle-process"
-98-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0aa65592d3c523dfe9c3cca2e0707b5d/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+98-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/85dccd77aff39d07f63c42d603c4f408/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
 99            android:exported="false"
-99-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0aa65592d3c523dfe9c3cca2e0707b5d/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+99-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/85dccd77aff39d07f63c42d603c4f408/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
 100            android:multiprocess="true" />
-100-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/0aa65592d3c523dfe9c3cca2e0707b5d/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+100-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/pratham.xp/.gradle/caches/transforms-2/files-2.1/85dccd77aff39d07f63c42d603c4f408/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
 101    </application>
 102
 103</manifest>
