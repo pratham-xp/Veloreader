@@ -16,13 +16,6 @@ class LoadAsset extends StatefulWidget {
 class _LoadAssetState extends State<LoadAsset> {
   @override
   Widget build(BuildContext context) {
-    EpubViewer.setConfig(
-      themeColor: Theme.of(context).primaryColor,
-      identifier: "iosBook",
-      scrollDirection: EpubScrollDirection.VERTICAL,
-      allowSharing: true,
-      enableTts: true,
-    );
     return FutureBuilder(
       future: Provider.of<Books>(context, listen: false).getBooks(),
       builder: (ctx, dataSnapshot) {
@@ -61,7 +54,15 @@ class _LoadAssetState extends State<LoadAsset> {
                               book: bookData.items[i],
                             ),
                             onTap: () {
-                              EpubViewer.open(
+                              EpubViewer.setConfig(
+                                themeColor: Theme.of(context).primaryColor,
+                                identifier: "iosBook",
+                                scrollDirection: EpubScrollDirection.VERTICAL,
+                                allowSharing: true,
+                                enableTts: true,
+                              );
+                              print(bookData.items[i].path);
+                              EpubViewer.openAsset(
                                 bookData.items[i].path,
                                 lastLocation: null,
                               );

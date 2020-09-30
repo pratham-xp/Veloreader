@@ -1,22 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:typed_data';
 import 'package:flutter/services.dart';
-//import 'package:image/image.dart' as img;
-
-// ignore: implementation_imports
-//import 'package:flutter/src/widgets/image.dart' as IMG;
-//import 'dart:io' as io;
 import 'package:epub/epub.dart';
-//import 'package:path_provider/path_provider.dart';
 
-//import 'package:async/async.dart';
-//import 'package:dart2_constant/convert.dart' as convert;
-//import 'package:archive/archive.dart';
 import './book.dart';
 
 class Books with ChangeNotifier {
-  //var imageData = BookItem().loadFromAssets('assets/images/Subtle Art.jpg');
-
   List<Book> _items = [];
   List<Book> get items {
     return [..._items];
@@ -38,6 +27,7 @@ class Books with ChangeNotifier {
     Uint8List audioUint8List = targetFile.buffer
         .asUint8List(targetFile.offsetInBytes, targetFile.lengthInBytes);
     List<int> bytes = audioUint8List.cast<int>();
+
     EpubBook epubBook = await EpubReader.readBook(bytes);
 
     String title = epubBook.Title;
