@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:veloreader/constants.dart';
+
+import 'package:veloreader/screens/booklist_edit.dart';
 import 'package:veloreader/widgets/load_asset.dart';
 import '../widgets/appdrawer.dart';
 
@@ -22,11 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: AppDrawer(),
       body: LoadAsset(),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          //Books().addBook();
-        },
+        onPressed: () =>
+            Navigator.of(context).pushNamed(BookListEdit.routeName),
         child: Icon(Icons.add),
-        backgroundColor: kPrimaryColor,
+        backgroundColor: Colors.pink,
       ),
     );
   }

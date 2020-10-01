@@ -17,14 +17,12 @@ class BookItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // It  will provide us total height and width of our screen
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.symmetric(
         horizontal: kDefaultPadding,
         vertical: kDefaultPadding / 2,
       ),
-      // color: Colors.blueAccent,
       height: 160,
       child: InkWell(
         onTap: press,
@@ -66,14 +64,11 @@ class BookItem extends StatelessWidget {
                 ),
               ),
             ),
-
-            // Product title and price
             Positioned(
               bottom: 0,
               left: 0,
               child: SizedBox(
                 height: 136,
-                // our image take 200 width, thats why we set out total width - 200
                 width: size.width - 200,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,12 +82,11 @@ class BookItem extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline6,
                       ),
                     ),
-                    // it use the available space
                     Spacer(),
                     Container(
                       padding: EdgeInsets.symmetric(
-                        horizontal: kDefaultPadding * 1.5, // 30 padding
-                        vertical: kDefaultPadding / 4, // 5 top and bottom
+                        horizontal: kDefaultPadding * 1.5,
+                        vertical: kDefaultPadding / 4,
                       ),
                       decoration: BoxDecoration(
                         color: kSecondaryColor,

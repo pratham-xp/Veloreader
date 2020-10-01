@@ -1,57 +1,94 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
-import 'dart:typed_data';
-import 'package:flutter/services.dart';
-import 'package:epub/epub.dart';
 
 import './book.dart';
 
 class Books with ChangeNotifier {
   List<Book> _items = [];
+
   List<Book> get items {
     return [..._items];
-  }
-
-  Future<List<Book>> getBooks() async {
-    List<Book> bookList = await load();
-    return [...bookList];
   }
 
   Book findById(String id) {
     return _items.firstWhere((ele) => ele.id == id);
   }
 
-  Future<List<Book>> load() async {
-    WidgetsFlutterBinding.ensureInitialized();
+  Future<void> fetchAndSetBooks() async {
+    const url = 'https://veloreader-31b18.firebaseio.com/books.json';
+    try {
+      final response = await http.get(url);
+      final extractedData = json.decode(response.body) as Map<String, dynamic>;
+      print(json.decode(response.body));
+      if (extractedData == null) {
+        return;
+      }
+      final List<Book> loadedBooks = [];
+      extractedData.forEach((bookId, bookData) {
+        loadedBooks.add(Book(
+          id: bookId,
+          title: bookData['title'],
+          category: bookData['category'],
+          authors: bookData['authors'],
+          path: bookData['path'],
+          coverPath: bookData['coverPath'],
+        ));
+      });
+      _items = loadedBooks;
+      notifyListeners();
+    } catch (error) {
+      print(error);
+      throw (error);
+    }
+  }
 
-    var targetFile = await rootBundle.load('assets/eBooks/Subtle Art.epub');
-    Uint8List audioUint8List = targetFile.buffer
-        .asUint8List(targetFile.offsetInBytes, targetFile.lengthInBytes);
-    List<int> bytes = audioUint8List.cast<int>();
+  Future<void> addBook(Book book) async {
+    const url = 'https://veloreader-31b18.firebaseio.com/books.json';
+    try {
+      final response = await http.post(
+        url,
+        body: json.encode({
+          'title': book.title,
+          'category': book.category,
+          'authors': book.authors,
+          'path': book.path,
+          'coverPath': book.coverPath,
+        }),
+      );
+      final newBook = Book(
+        title: book.title,
+        category: book.category,
+        authors: book.authors,
+        path: book.path,
+        coverPath: book.coverPath,
+        id: json.decode(response.body)['name'],
+      );
+      _items.add(newBook);
+      // _items.insert(0, newProduct); // at the start of the list
+      notifyListeners();
+    } catch (error) {
+      print(error);
+      throw error;
+    }
+  }
 
-    EpubBook epubBook = await EpubReader.readBook(bytes);
-
-    String title = epubBook.Title;
-    //String author = epubBook.Author;
-    List<String> authors = epubBook.AuthorList;
-    //img.Image pic = epubBook.CoverImage;
-    print(authors);
-/* 
-    io.Directory tempDir = await getTemporaryDirectory();
-
-    img.Image thumbnail = img.copyResize(pic, width: 120, height: 180);
-    io.File('${tempDir.path}/Subtle Art.jpg')
-        .writeAsBytesSync(img.encodeJpg(thumbnail));
-    var image = IMG.FileImage(io.File('${tempDir.path}/Subtle Art.jpg)'));
-    IMG.Image cover = IMG.Image(image: image); */
-    print('loaded');
-    _items.add(Book(
-      id: DateTime.now().toString(),
-      title: title,
-      authors: authors,
-      path: 'assets/eBooks/Subtle Art.epub',
-    ));
-    print(_items.length);
-    notifyListeners();
-    return _items;
+  Future<void> updateBook(String id, Book newBook) async {
+    final bookIndex = _items.indexWhere((book) => book.id == id);
+    if (bookIndex >= 0) {
+      final url = 'https://veloreader-31b18.firebaseio.com/books.json$id.json';
+      await http.patch(url,
+          body: json.encode({
+            'title': newBook.title,
+            'category': newBook.category,
+            'authors': newBook.authors,
+            'path': newBook.path,
+            'coverPath': newBook.coverPath,
+          }));
+      _items[bookIndex] = newBook;
+      notifyListeners();
+    } else {
+      print('...');
+    }
   }
 }
