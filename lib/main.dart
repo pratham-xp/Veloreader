@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:veloreader/screens/booklist_edit.dart';
 
+import './screens/booklist_edit.dart';
 import './screens/words_screen.dart';
 import './screens/excerpts_screen.dart';
 import './screens/homescreen.dart';
@@ -23,27 +23,26 @@ class _MyAppState extends State<MyApp> {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (_) => Books(),
-          child: MaterialApp(
-            title: 'Veloreader',
-            theme: ThemeData(
-              primaryColor: kPrimaryColor,
-              accentColor: kPrimaryColor,
-              visualDensity: VisualDensity.adaptivePlatformDensity,
-              textTheme: GoogleFonts.abelTextTheme(
-                Theme.of(context).textTheme,
-              ),
-            ),
-            home: HomeScreen(),
-            routes: {
-              ExcerptsScreen.routeName: (ctx) => ExcerptsScreen(),
-              NotesScreen.routeName: (ctx) => NotesScreen(),
-              WordsScreen.routeName: (ctx) => WordsScreen(),
-              BookListEdit.routeName: (ctx) => BookListEdit(),
-            },
-          ),
+          create: (ctx) => Books(),
         ),
       ],
+      child: MaterialApp(
+          title: 'Veloreader',
+          theme: ThemeData(
+            primaryColor: kPrimaryColor,
+            accentColor: kPrimaryColor,
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+            textTheme: GoogleFonts.abelTextTheme(
+              Theme.of(context).textTheme,
+            ),
+          ),
+          home: HomeScreen(),
+          routes: {
+            ExcerptsScreen.routeName: (ctx) => ExcerptsScreen(),
+            NotesScreen.routeName: (ctx) => NotesScreen(),
+            WordsScreen.routeName: (ctx) => WordsScreen(),
+            BookListEdit.routeName: (ctx) => BookListEdit(),
+          }),
     );
   }
 }

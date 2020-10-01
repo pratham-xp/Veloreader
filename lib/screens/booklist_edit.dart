@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/book.dart';
@@ -122,9 +123,13 @@ class _BookListEditState extends State<BookListEdit> {
 
   @override
   Widget build(BuildContext context) {
+    //final model = Provider.of<Books>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Product'),
+        title: Text(
+          'Veloreader',
+          style: GoogleFonts.pacifico(),
+        ),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.save),
