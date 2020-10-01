@@ -23,26 +23,27 @@ class _MyAppState extends State<MyApp> {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (ctx) => Books(),
+          create: (_) => Books(),
+          child: MaterialApp(
+            title: 'Veloreader',
+            theme: ThemeData(
+              primaryColor: kPrimaryColor,
+              accentColor: kPrimaryColor,
+              visualDensity: VisualDensity.adaptivePlatformDensity,
+              textTheme: GoogleFonts.abelTextTheme(
+                Theme.of(context).textTheme,
+              ),
+            ),
+            home: HomeScreen(),
+            routes: {
+              ExcerptsScreen.routeName: (ctx) => ExcerptsScreen(),
+              NotesScreen.routeName: (ctx) => NotesScreen(),
+              WordsScreen.routeName: (ctx) => WordsScreen(),
+              BookListEdit.routeName: (ctx) => BookListEdit(),
+            },
+          ),
         ),
       ],
-      child: MaterialApp(
-          title: 'Veloreader',
-          theme: ThemeData(
-            primaryColor: kPrimaryColor,
-            accentColor: kPrimaryColor,
-            visualDensity: VisualDensity.adaptivePlatformDensity,
-            textTheme: GoogleFonts.abelTextTheme(
-              Theme.of(context).textTheme,
-            ),
-          ),
-          home: HomeScreen(),
-          routes: {
-            ExcerptsScreen.routeName: (ctx) => ExcerptsScreen(),
-            NotesScreen.routeName: (ctx) => NotesScreen(),
-            WordsScreen.routeName: (ctx) => WordsScreen(),
-            BookListEdit.routeName: (ctx) => BookListEdit(),
-          }),
     );
   }
 }

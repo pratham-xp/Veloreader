@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:veloreader/screens/booklist_edit.dart';
-import 'package:veloreader/widgets/load_asset.dart';
+import '../screens/booklist_edit.dart';
+import '../widgets/load_asset.dart';
 import '../widgets/appdrawer.dart';
 
 class HomeScreen extends StatefulWidget {
