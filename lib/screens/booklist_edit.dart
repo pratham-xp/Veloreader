@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-import '../providers/book.dart';
-import '../providers/books.dart';
+import '../Providers/book.dart';
+import '../Providers/books.dart';
 
 class BookListEdit extends StatefulWidget {
   static const routeName = '/edit-booklist';

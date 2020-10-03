@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../screens/words_screen.dart';
 import '../screens/notes_screen.dart';
@@ -11,7 +12,10 @@ class AppDrawer extends StatelessWidget {
         child: Column(
       children: [
         AppBar(
-          title: Text('Hello worm'),
+          title: Text(
+            'Hey fellow worm!',
+            style: GoogleFonts.pacifico(),
+          ),
           automaticallyImplyLeading: false,
         ),
         Divider(),

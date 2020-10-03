@@ -1,20 +1,20 @@
 import 'package:epub_viewer/epub_viewer.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:veloreader/screens/booklist_edit.dart';
 
+import 'booklist_edit.dart';
 import '../Providers/books.dart';
 import '../constants.dart';
-import 'book_item.dart';
-import 'category_list.dart';
-import 'search_bar.dart';
+import '../widgets/book_item.dart';
+import '../widgets/category_list.dart';
+import '../widgets/search_bar.dart';
 
-class LoadAsset extends StatefulWidget {
+class BookShelf extends StatefulWidget {
   @override
-  _LoadAssetState createState() => _LoadAssetState();
+  _BookShelfState createState() => _BookShelfState();
 }
 
-class _LoadAssetState extends State<LoadAsset> {
+class _BookShelfState extends State<BookShelf> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -48,7 +48,7 @@ class _LoadAssetState extends State<LoadAsset> {
                       ListView.builder(
                         padding: EdgeInsets.all(10),
                         itemCount: bookData.items.length,
-                        itemBuilder: (ctx, i) => i == 0
+                        itemBuilder: (ctx, i) => bookData.items.length == 0
                             ? Text('No books')
                             : GestureDetector(
                                 child: BookItem(

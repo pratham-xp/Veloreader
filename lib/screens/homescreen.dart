@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../screens/booklist_edit.dart';
-import '../widgets/load_asset.dart';
+import 'BookShelf.dart';
 import '../widgets/appdrawer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,10 +21,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       drawer: AppDrawer(),
-      body: LoadAsset(),
+      body: BookShelf(),
       floatingActionButton: FloatingActionButton(
         onPressed: () =>
             Navigator.of(context).pushNamed(BookListEdit.routeName),
+        //BookListEdit(),
         child: Icon(Icons.add),
         backgroundColor: Colors.pink,
       ),

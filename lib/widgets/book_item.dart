@@ -96,7 +96,7 @@ class BookItem extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        book.authors[0],
+                        book.authors,
                         style: Theme.of(context).textTheme.bodyText2,
                       ),
                     ),
