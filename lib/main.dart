@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
           title: 'Veloreader',
           theme: ThemeData(
             primaryColor: kPrimaryColor,
-            accentColor: kPrimaryColor,
+            accentColor: Colors.amber,
             visualDensity: VisualDensity.adaptivePlatformDensity,
             textTheme: GoogleFonts.abelTextTheme(
               Theme.of(context).textTheme,

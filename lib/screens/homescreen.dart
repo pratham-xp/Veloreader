@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.of(context).pushNamed(BookListEdit.routeName),
         //BookListEdit(),
         child: Icon(Icons.add),
-        backgroundColor: Colors.pink,
+        backgroundColor: Theme.of(context).accentColor,
       ),
     );
   }

@@ -57,10 +57,10 @@ class _BookShelfState extends State<BookShelf> {
                                 ),
                                 onTap: () {
                                   EpubViewer.setConfig(
-                                    themeColor: Theme.of(context).primaryColor,
+                                    themeColor: Theme.of(context).accentColor,
                                     identifier: "iosBook",
                                     scrollDirection:
-                                        EpubScrollDirection.VERTICAL,
+                                        EpubScrollDirection.HORIZONTAL,
                                     allowSharing: true,
                                     enableTts: true,
                                   );
