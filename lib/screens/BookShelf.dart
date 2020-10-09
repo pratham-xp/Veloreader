@@ -66,10 +66,7 @@ class _BookShelfState extends State<BookShelf> {
                       ),
                       ListView.builder(
                         padding: EdgeInsets.all(10),
-                        itemCount: bookData.items
-                            .where((element) =>
-                                element.category == Book().categoryList[index])
-                            .length,
+                        itemCount: bookData.items.length,
                         itemBuilder: (ctx, i) => GestureDetector(
                           child: BookItem(
                             itemIndex: i,
