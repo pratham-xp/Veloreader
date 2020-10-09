@@ -18,6 +18,7 @@ class _BookListEditState extends State<BookListEdit> {
   final _coverPathFocusNode = FocusNode();
   final _coverPathController = TextEditingController();
   final _submitButtonFocusNode = FocusNode();
+  String dropdownValue = 'Choose';
   final _form = GlobalKey<FormState>();
   var _editedBook = Book(
       id: null, title: '', authors: '', category: '', path: '', coverPath: '');
@@ -171,32 +172,83 @@ class _BookListEditState extends State<BookListEdit> {
                         );
                       },
                     ),
-                    TextFormField(
-                      initialValue: _initValues['category'],
-                      decoration: InputDecoration(labelText: 'Category'),
-                      textInputAction: TextInputAction.next,
-                      keyboardType: TextInputType.text,
-                      focusNode: _categoryFocusNode,
-                      onFieldSubmitted: (_) {
-                        FocusScope.of(context).requestFocus(_authorsFocusNode);
-                      },
-                      validator: (value) {
-                        if (value.isEmpty) {
-                          return 'Please enter a category.';
-                        }
-                        return null;
-                      },
-                      onSaved: (value) {
-                        _editedBook = Book(
-                          title: _editedBook.title,
-                          category: value,
-                          authors: _editedBook.authors,
-                          coverPath: _editedBook.coverPath,
-                          path: _editedBook.path,
-                          id: _editedBook.id,
-                        );
-                      },
+                    SizedBox(
+                      height: 15,
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Category',
+                          style:
+                              TextStyle(fontSize: 16, color: Colors.grey[700]),
+                        ),
+                        DropdownButton<String>(
+                          value: dropdownValue,
+                          icon: Icon(Icons.arrow_downward),
+
+                          iconSize: 22,
+                          elevation: 0,
+                          focusNode: _categoryFocusNode,
+                          focusColor: Colors.grey[100],
+                          style: GoogleFonts.abel(color: Colors.black),
+                          // underline: Container(
+                          //   height: 2,
+                          //   color: Theme.of(context).primaryColor,
+
+                          onChanged: (String newValue) {
+                            setState(() {
+                              dropdownValue = newValue;
+                            });
+                            _editedBook = Book(
+                              title: _editedBook.title,
+                              category: newValue,
+                              authors: _editedBook.authors,
+                              coverPath: _editedBook.coverPath,
+                              path: _editedBook.path,
+                              id: _editedBook.id,
+                            );
+                          },
+                          items: Book()
+                              .categoryList
+                              .map<DropdownMenuItem<String>>((String value) {
+                            return DropdownMenuItem<String>(
+                              value: value,
+                              child: Text(
+                                value,
+                                style: TextStyle(fontSize: 17),
+                              ),
+                            );
+                          }).toList(),
+                        ),
+                      ],
+                    ),
+                    // TextFormField(
+                    //   initialValue: _initValues['category'],
+                    //   decoration: InputDecoration(labelText: 'Category'),
+                    //   //textInputAction: TextInputAction.next,
+                    //   //keyboardType: TextInputType.text,
+                    //   focusNode: _categoryFocusNode,
+                    //   onFieldSubmitted: (_) {
+                    //     FocusScope.of(context).requestFocus(_authorsFocusNode);
+                    //   },
+                    //   validator: (value) {
+                    //     if (value.isEmpty) {
+                    //       return 'Please enter a category.';
+                    //     }
+                    //     return null;
+                    //   },
+                    //   onSaved: (value) {
+                    //     _editedBook = Book(
+                    //       title: _editedBook.title,
+                    //       category: value,
+                    //       authors: _editedBook.authors,
+                    //       coverPath: _editedBook.coverPath,
+                    //       path: _editedBook.path,
+                    //       id: _editedBook.id,
+                    //     );
+                    //   },
+                    // ),
                     TextFormField(
                       initialValue: _initValues['authors'],
                       decoration: InputDecoration(labelText: 'Authors'),
@@ -226,7 +278,7 @@ class _BookListEditState extends State<BookListEdit> {
                     ),
                     TextFormField(
                       initialValue: _initValues['path'],
-                      decoration: InputDecoration(labelText: 'book path'),
+                      decoration: InputDecoration(labelText: 'Book path'),
                       maxLines: 1,
                       textInputAction: TextInputAction.next,
                       keyboardType: TextInputType.multiline,

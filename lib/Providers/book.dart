@@ -10,13 +10,35 @@ class Book with ChangeNotifier {
   final String path;
 
   Book({
-    @required this.id,
-    @required this.title,
-    @required this.category,
-    @required this.authors,
+    this.id,
+    this.title,
+    this.category,
+    this.authors,
     this.coverPath,
     this.path,
   });
+
+  List<String> _categories = [
+    'Choose',
+    'All',
+    'Action & Adventure',
+    'Arts, Film & Photography',
+    'Biographies, Diaries & True Accounts',
+    'Children\'s & Young Adult',
+    'Craft, Hobbies & Home',
+    'Crime, Thriller & Mystery',
+    'Health, Family & Personal Development',
+    'History',
+    'Literature & Fiction',
+    'Religion & Spirituality',
+    'Romance',
+    'Science Fiction & Fantasy',
+    'Textbooks & Study Guides'
+  ];
+
+  List<String> get categoryList {
+    return [..._categories];
+  }
 
   @override
   void notifyListeners() {

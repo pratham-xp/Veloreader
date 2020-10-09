@@ -24,8 +24,8 @@ dependencies:
   flutter:
     sdk: flutter
   epub: ^2.1.0
+  flappy_search_bar: 1.4.1
   epub_viewer: ^0.1.7
-  #epub_kitty: ^0.1.7
   provider: ^4.3.2+1
   google_fonts: ^1.1.0
   archive: ^2.0.13
@@ -38,6 +38,7 @@ dependencies:
   global_configuration: ^1.5.0
   permission_handler: ^5.0.1+1
   http: ^0.12.2
+  flutter_launcher_icons: ^0.8.1
   #flutter_svg: ^0.17.4
 
   # The following adds the Cupertino Icons font to your application.
@@ -56,6 +57,11 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/appicon.png"
+
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -68,6 +74,7 @@ flutter:
     - assets/images/Subtle Art.jpg
     - assets/eBooks/Subtle Art.epub
     - assets/icons/search.svg
+    - assets/icons/appicon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
