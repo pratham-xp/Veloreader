@@ -1,2 +1,2 @@
 # veloreader
- An eBook reader for speed reading. Project made using Flutter framework.
+ An eBook reader made using Flutter framework.
